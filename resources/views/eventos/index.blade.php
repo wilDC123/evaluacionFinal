@@ -8,8 +8,8 @@
 
 @section('content')
     <a href="{{ route('eventos.create') }}" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Nuevo Evento</a>
-    <table id="eventos" class="table table-bordered mt-12">
-        <thead class="tabla-eventos">
+    <table id="eventos" class="table table-bordered shadow-lg mt-12">
+        <thead class="tabla-eventos  text-white" style="background-color: #515E78;">
             <tr>
                 <td width="15px">Nº</td>
                 <th>Nombre</th>
