@@ -341,6 +341,18 @@ return [
             'icon' => 'fas fa-fw fa-calendar',     
         ],
 
+        [
+            'text' => 'Proveedores',
+            'url' => 'suppliers',
+            'icon' => 'fas fa-fw fa-truck',     
+        ],
+
+        [
+            'text' => 'Inventario',
+            'url' => 'inventories',
+            'icon' => 'fas fa-fw fa-boxes',     
+        ],
+
         /*[
             'text' => 'multilevel',
             'icon' => 'fas fa-fw fa-share',
