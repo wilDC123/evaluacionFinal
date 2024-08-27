@@ -11,24 +11,24 @@
     <table id="inventories" class="table table-bordered shadow-lg mt-12">
         <thead class="tabla-inventories  text-white" style="background-color: #515E78;">
             <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Fecha</th>
-                <th>Proveedor</th>
-                <th>Acciones</th>
+                <th class="text-center">ID</th>
+                <th class="text-center">Nombre</th>
+                <th class="text-center">Cantidad</th>
+                <th class="text-center">Precio</th>
+                <th class="text-center">Fecha</th>
+                <th class="text-center">Proveedor</th>
+                <th class="text-center">Acciones</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($inventories as $inventory)
                 <tr>
-                    <td>{{ $inventory->id }}</td>
-                    <td>{{ $inventory->item_name }}</td>
-                    <td>{{ $inventory->quantity }}</td>
-                    <td>{{ $inventory->price }}</td>
-                    <td>{{ $inventory->date }}</td>
-                    <td>{{ $inventory->supplier->name }}</td>
+                    <td class="text-center">{{ $inventory->id }}</td>
+                    <td class="text-center">{{ $inventory->item_name }}</td>
+                    <td class="text-center">{{ $inventory->quantity }}</td>
+                    <td class="text-center">{{ $inventory->price }}</td>
+                    <td class="text-center">{{ $inventory->date }}</td>
+                    <td class="text-center">{{ $inventory->supplier->name }}</td>
                     <td>
                     <a href="{{ route('inventories.edit', $inventory) }}" class="btn btn-dark btn-sm"><i class="fas fa-edit"></i> </a>
                         <a href="{{ route('inventories.show', $inventory) }}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
@@ -47,12 +47,7 @@
 @stop
 @section('css')
 <link rel="stylesheet" href="https://cdn.datatables.net/2.1.4/css/dataTables.bootstrap5.css">
-    <style>
-        .tabla-inventories th, .tabla-inventories td {
-            text-align: center;
-            vertical-align: middle;
-        }
-    </style>
+
 
 @endsection
 

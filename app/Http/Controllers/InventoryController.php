@@ -14,7 +14,8 @@ class InventoryController extends Controller
      */
     public function index()
     {
-        $inventories = Inventory::all();
+        $inventories = Inventory::with('supplier')->get();
+        //$inventories = Inventory::all();
         return view('inventories.index', compact('inventories'));
     }
 
@@ -33,13 +34,13 @@ class InventoryController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        /*$request->validate([
             'item_name' => 'required|string|max:191',
             'quantity' => 'required|integer',
             'price' => 'required|numeric',
             'date' => 'required|date',
             'supplier_id' => 'required|exists:suppliers,id'
-        ]);
+        ]);*/
         Inventory::create($request->all());
         return redirect()->route('inventories.index')->with('success', 'El producto fue creado correctamente');
     }
@@ -69,6 +70,9 @@ class InventoryController extends Controller
      */
     public function update(Request $request, Inventory $inventory)
     {
+        
+
+
         $request->validate([
             'item_name' => 'required|string|max:191',
             'quantity' => 'required|integer',

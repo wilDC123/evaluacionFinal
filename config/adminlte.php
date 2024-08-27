@@ -353,6 +353,18 @@ return [
             'icon' => 'fas fa-fw fa-boxes',     
         ],
 
+        [
+            'text' => 'Clientes',
+            'url' => 'clients',
+            'icon' => 'fas fa-users',     
+        ],
+
+        [
+            'text' => 'Citas',
+            'url' => 'appointments',
+            'icon' => 'fas fa-calendar-alt',     
+        ],
+
         /*[
             'text' => 'multilevel',
             'icon' => 'fas fa-fw fa-share',

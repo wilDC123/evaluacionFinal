@@ -20,7 +20,7 @@
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="ci">Cedula de Identidad</label>
+                    <label for="ci">Carnet de identidad</label>
                     <input type="text" id="ci" name="ci" class="form-control" required>
                 </div>
             </div>
@@ -43,6 +43,7 @@
             </div>
         </div>
         
+            
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -61,15 +62,15 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="phone">Pais</label>
-                    <input type="text" id="phone" name="phone" class="form-control" required>
+                <div class="form-group ">
+                    <label for="country">Pais</label>
+                    <input type="text" id="country" name="country" class="form-control" required>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="birth_date">Fecha de Nacimiento</label>
+                    <label for="birth_date">Fecha de nacimiento</label>
                     <input type="date" id="birth_date" name="birth_date" class="form-control" required>
                 </div>
             </div>
@@ -83,10 +84,7 @@
                 </div>
             </div>
         </div>
-            
     
-             
-       
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
 @stop

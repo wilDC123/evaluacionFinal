@@ -5,6 +5,9 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EventoController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\AppointmentController;
+
 
 
 
@@ -31,6 +34,9 @@ Route::resource('products', ProductController::class);
 Route::resource('eventos', EventoController::class);
 Route::resource('suppliers', SupplierController::class);
 Route::resource('inventories', InventoryController::class);
+Route::resource('clients', ClientController::class);
+Route::resource('appointments', AppointmentController::class);
+
 
 
 
