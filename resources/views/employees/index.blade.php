@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Cita')
+@section('title', 'Empleado')
 
 @section('content_header')
-    <h1>Detalles de cita</h1>
+    <h1>Detalles del Empleado</h1>
 @stop
 
 @section('content')
@@ -13,19 +13,13 @@
             <tr>
                 <th class="text-center">Nº</th>
                 <th class="text-center">Nombre</th>
-                <th class="text-center">Apellido</th>
                 <th class="text-center">C.I</th>
-                <th class="text-center">Correo</th>
                 <th class="text-center">Telefono</th>
-                <th class="text-center">Cumpleaños</th>
                 <th class="text-center">Direccion</th>
-                <th class="text-center">Ciudad</th>
                 <th class="text-center">Pais</th>
-                <th class="text-center">Cargo</th>
                 <th class="text-center">Departamento</th>
-                <th class="text-center">Fecha de Contrato</th>
+                <th class="text-center">Cargo</th>
                 <th class="text-center">Salario</th>
-                <th class="text-center">Genero</th>
                 <th class="text-center">Acciones</th>
             </tr>
         </thead>
@@ -33,20 +27,14 @@
             @foreach ($employees as $employee)
                 <tr>
                     <td class="text-center">{{ $employee->id }}</td>
-                    <td class="text-center">{{ $employee->first_name }}</td>
-                    <td class="text-center">{{ $employee->last_name }}</td>
+                    <td class="text-center">{{ $employee->first_name . ' ' . $employee->last_name }}</td>
                     <td class="text-center">{{ $employee->ci }}</td>
-                    <td class="text-center">{{ $employee->email }}</td>
                     <td class="text-center">{{ $employee->phone}}</td>
-                    <td class="text-center">{{ $employee->birth_date }}</td>
                     <td class="text-center">{{ $employee->address }}</td>
-                    <td class="text-center">{{ $employee->city }}</td>
                     <td class="text-center">{{ $employee->country }}</td>
-                    <td class="text-center">{{ $employee->position->job }}</td>
                     <td class="text-center">{{ $employee->department->name }}</td>
-                    <td class="text-center">{{ $employee->hire_date }}</td>
+                    <td class="text-center">{{ $employee->position->job }}</td>
                     <td class="text-center">{{ $employee->salary }}</td>
-                    <td class="text-center">{{ $employee->gender }}</td>
                     <td>
                     <a href="{{ route('employees.edit', $employee) }}" class="btn btn-dark btn-sm"><i class="fas fa-edit"></i> </a>
                         <a href="{{ route('employees.show', $employee) }}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>

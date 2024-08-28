@@ -42,14 +42,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="phone">Telefono</label>
                         <input type="text" id="phone" name="phone" class="form-control" required>
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="birth_date">Cumpleaños</label>
                         <input type="date" id="birth_date" name="birth_date" class="form-control" required>

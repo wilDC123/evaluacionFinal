@@ -370,17 +370,17 @@ return [
         [
             'text' => 'Departamentos',
             'url' => 'departments',
-            'icon' => 'fas fa-calendar-alt',     
+            'icon' => 'fas fa-building',     
         ],
         [
             'text' => 'Posiciones',
             'url' => 'positions',
-            'icon' => 'fas fa-calendar-alt',     
+            'icon' => 'fas fa-briefcase',     
         ],
         [
             'text' => 'Empleados',
             'url' => 'employees',
-            'icon' => 'fas fa-calendar-alt',     
+            'icon' => 'fas fa-user-tie',     
         ],
 
 

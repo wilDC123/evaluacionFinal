@@ -21,10 +21,10 @@
         <tbody>
             @foreach ($positions as $position)
                 <tr>
-                    <td class="text-center">{{ $position->id }}</td>
-                    <td class="text-center">{{ $position->job }}</td>
-                    <td class="text-center">{{ $position->description }}</td>
-                    <td class="text-center">
+                    <td class="text-start">{{ $position->id }}</td>
+                    <td class="text-start">{{ $position->job }}</td>
+                    <td class="text-start">{{ $position->description }}</td>
+                    <td class="text-start">
                     <a href="{{ route('positions.edit', $position) }}" class="btn btn-dark btn-sm"><i class="fas fa-edit"></i> </a>
                         <a href="{{ route('positions.show', $position) }}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
                         <form action="{{ route('positions.destroy', $position) }}" method="POST" style="display:inline;">
