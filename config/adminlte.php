@@ -365,6 +365,25 @@ return [
             'icon' => 'fas fa-calendar-alt',     
         ],
 
+
+
+        [
+            'text' => 'Departamentos',
+            'url' => 'departments',
+            'icon' => 'fas fa-calendar-alt',     
+        ],
+        [
+            'text' => 'Posiciones',
+            'url' => 'positions',
+            'icon' => 'fas fa-calendar-alt',     
+        ],
+        [
+            'text' => 'Empleados',
+            'url' => 'employees',
+            'icon' => 'fas fa-calendar-alt',     
+        ],
+
+
         /*[
             'text' => 'multilevel',
             'icon' => 'fas fa-fw fa-share',
