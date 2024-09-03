@@ -35,6 +35,7 @@ class InscripcionController extends Controller
         return view('inscripciones.show', compact('inscripcion'));
 
     }
+    
 
     public function edit(Inscripcion $inscripcion)
     {
@@ -42,12 +43,13 @@ class InscripcionController extends Controller
         $cursos = Curso::all();  
         return view('inscripciones.edit', compact('inscripcion', 'estudiantes', 'cursos'));
     }
+    
 
     public function update(Request $request, Inscripcion $inscripcion)
     {
         $request->validate([
             'estudiante_id' => 'required|exists:estudiantes,id',
-            'curso' => 'required|exists:cursos,id',
+            'curso_id' => 'required|exists:cursos,id',
             'f_inscripcion' => 'required|date',
         ]);
         $inscripcion->update($request->all());
